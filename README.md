@@ -30,7 +30,7 @@ cd ..
 catkin_make
 ```
 ## 3. System architecture
-![alt text](fig/framwork.png)
+![alt text](fig/framework.png)
 
 - Develop an accurate ego-velocity estimation method using our enhanced physical model of radial Doppler velocity. We utilize DBSCAN clustering to eliminate dynamic object interference and noise, ensuring reliable performance even in challenging dynamic environments.
 
