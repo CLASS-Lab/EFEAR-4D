@@ -3,9 +3,7 @@
 [Paper (Arxiv)](https://arxiv.org/abs/2405.09780), [IEEEXplore](https://ieeexplore.ieee.org/document/10685149), [Video](https://www.youtube.com/watch?v=3Q6F9az0ACg)
 
 ![alt text](fig/outlier_removal.gif)
-<div style="text-align: center;">
-  <img src="fig/Trajectory.gif" alt="alt text" width="720" height="360">
-</div>
+![alt text](fig/Trajectory.gif)
 
 ## 1. Dependency
 ### 1.1 **Ubuntu** and **ROS**
