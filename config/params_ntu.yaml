@@ -1,0 +1,44 @@
+efear:
+
+  robot_id: 0  # 1: car, 0: hand draft 
+  # Topics
+  pointCloudTopic: "/radar_enhanced_pcl" 
+  imuTopic: "/imu/data"
+  odomTopic: "/odom"                   # IMU pre-preintegration odometry, same frequency as IMU
+  gpsTopic: "/gps/fix1" 
+  #gpsTopic: "/ublox/fix"                   # GPS odometry topic from navsat, see module_navsat.launch file
+
+  # Frames
+  lidarFrame: ""
+  baselinkFrame: "base_link"
+  odometryFrame: "odom"
+  mapFrame: "map"
+  
+  # Export settings
+  # savePCD: false                              # 
+  # savePCDDirectory: "/Downloads/LOAM/"        #
+
+  # Sensor Settings
+  # z_low_thresh: -5.0                         # default: -5.0, minimum z value of the point cloud
+  # z_high_thresh: 10.0                          # default: 10.0, maximum z value of the point cloud
+  # distance_near_thresh: 1.0                          # default: 1.0, minimum lidar range to be used
+  # distance_far_thresh: 100.0                       # default: 100.0, maximum lidar range to be used
+
+ 
+  # Matching Settings
+  registration_type: "P2P"
+  resolution: 1.0         # The voxel size for the voxel grid features, in meters 
+  enable_dynamic_object_removal: false
+
+
+  # Extrinsics (Radar -> IMU)
+  extrinsicTrans: [0, 0, 0]
+  extrinsicRot: [1, 0, 0,
+                  0, 1, 0,
+                  0, 0, 1]
+
+ego_velocity_estimator:
+  inlier_thresh: 1.5 # m/s, depend on the speed
+
+
+
