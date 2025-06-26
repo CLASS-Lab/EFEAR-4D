@@ -63,3 +63,18 @@ CFEAR Radar odometry
 3. [christopherdoer/reve](https://github.com/christopherdoer/reve) radar ego-velocity estimator
 4. [TixiaoShan / LIO-SAM ](https://github.com/TixiaoShan/LIO-SAM) 
 
+## 8、Paper
+
+Thank you for citing EFEAR-4D if you use any of this code.
+```
+@ARTICLE{efear-4d,
+  author={Wu, Xiaoyi and Chen, Yushuai and Li, Zhan and Hong, Ziyang and Hu, Liang},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={EFEAR-4D: Ego-Velocity Filtering for Efficient and Accurate 4D Radar Odometry}, 
+  year={2024},
+  volume={9},
+  number={11},
+  pages={9828-9835},
+  keywords={Radar;Doppler radar;Odometry;Doppler effect;Estimation;Point cloud compression;Feature extraction;SLAM;autonomous vehicle navigation;4D mmWave radar;radar odometry},
+  doi={10.1109/LRA.2024.3466071}}
+```
