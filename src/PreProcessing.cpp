@@ -276,10 +276,13 @@ public:
     msg.header.frame_id = baselinkFrame;
 
     sensor_msgs::PointCloud2 cloud_msg;
-    pcl::toROSMsg(*src_cloud, cloud_msg);
+    pcl::toROSMsg(*filtered, cloud_msg);
     cloud_msg.header = msg.header;
     msg.cloud = cloud_msg;
 
+    if(filtered->empty()) {
+      return;
+    }
     
     msg.twist = twist;
     points_pub.publish(msg);
